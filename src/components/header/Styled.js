@@ -9,6 +9,10 @@ export const Header = styled.header`
   img {
     width: 50px;
   }
+
+  .desk{
+    display: none;
+  }
   nav {
     width: 50%;
     height: 100%;
@@ -34,6 +38,20 @@ export const Header = styled.header`
     }
     100% {
       right: 0;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .desk{
+      height: fit-content;
+      position: initial;
+      display: initial;
+      background-color: transparent;
+      ul{
+        margin: 0;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
     }
   }
 `;
@@ -88,5 +106,8 @@ export const MHamb = styled.label`
     transform-origin: bottom;
     width: 50%;
     transform: translate(15px, -5px) rotatez(45deg);
+  }
+  @media screen and (min-width: 1240px){
+    display: none;
   }
 `;

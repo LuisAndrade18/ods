@@ -17,7 +17,19 @@ const Header = () => {
           <span></span>
         </S.MHamb>
       </div>
-
+      <nav className='desk'>
+        <ul>
+          <li>
+            <S.Links to="/">O que são ODS?</S.Links>
+          </li>
+          <li>
+            <S.Links to="/quais-sao-as-ods">Quais são os ODS?</S.Links>
+          </li>
+          <li>
+            <S.Links to="/ods-em-minha-regiao">Maré</S.Links>
+          </li>
+        </ul>
+      </nav>
       {open && (
         <nav>
           <ul>

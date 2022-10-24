@@ -1,8 +1,9 @@
 import React from 'react'
+import * as S from '../Styled'
 
 const AboutOds = () => {
   return (
-    <div>
+    <S.Info>
       <h2>O que são os ODS?</h2>
       <p>
         ODS é a sigla para os Objetivos de Desenvolvimento Sustentável que fazem
@@ -13,7 +14,7 @@ const AboutOds = () => {
         desenvolvimento enfrentados por pessoas no Brasil e no mundo, promovendo
         o crescimento sustentável global até 2030.
       </p>
-    </div>
+    </S.Info>
   );
 }
 

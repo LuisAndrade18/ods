@@ -1,5 +1,30 @@
 import styled from 'styled-components';
 
+export const Info = styled.section`
+  width: 90%;
+  margin: 5% auto;
+  border: solid 1px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 6px gray;
+  h2 {
+    width: fit-content;
+    margin: 15px auto;
+  }
+  p {
+    margin: 15px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 60%;
+    h2 {
+      font-size: 4vw;
+    }
+    p{
+      font-size: 2vw;
+      margin: 25px;
+    }
+  }
+`;
+
 export const Ods = styled.section`
   width: 100%;
   display: flex;
@@ -13,7 +38,7 @@ export const Ods = styled.section`
   @media screen and (min-width: 1024px) {
     width: 70%;
     margin: auto;
-    h2{
+    h2 {
       font-size: 5vw;
     }
   }
@@ -25,12 +50,19 @@ export const Card = styled.div`
   justify-content: center;
   img {
     width: 90%;
+    border-radius: 10px;
+    box-shadow: 3px 4px 6px gray;
+  }
+  &:hover{
+    img{
+      transform: scale(98%);
+    }
   }
   @media screen and (min-width: 767px) {
     width: 33.33%;
   }
   @media screen and (min-width: 1024px) {
-  width: 20%;
+    width: 20%;
   }
 `;
 
@@ -40,14 +72,20 @@ export const PopUp = styled.div`
   background-color: #37373745;
   position: fixed;
   top: 0;
-  button {
-    color: white;
-    font-size: 30px;
-    background: none;
-    border: none;
-    position: absolute;
-    right: 5%;
-    top: 3%;
+  .close {
+    display: none;
+  }
+  @media screen and (min-width: 1024px) {
+    .close {
+      display: initial;
+      color: white;
+      font-size: 30px;
+      background: none;
+      border: none;
+      position: absolute;
+      right: 5%;
+      top: 3%;
+    }
   }
 `;
 
@@ -84,13 +122,13 @@ export const PopUpInside = styled.div`
     }
   }
   @media screen and (min-width: 1024px) {
-  width: 60%;
-  height: 60%;
-  h3{
-    font-size: 3vw;
-  }
-  p{
-    font-size: 2.5vw;
-  }
+    width: 60%;
+    height: 60%;
+    h3 {
+      font-size: 3vw;
+    }
+    p {
+      font-size: 2.5vw;
+    }
   }
 `;

@@ -18,7 +18,7 @@ const Ods = () => {
       ))}
       {open && popUp.map((i) => (
         <S.PopUp onClick={() => setOpen(!open)}>
-          <button onClick={()=>setOpen(!open)}>X</button>
+          <button className='close' onClick={() => setOpen(!open)}>X</button>
           <S.PopUpInside>
             <h3>{i.name}</h3>
             <p>{i.objective}</p>
